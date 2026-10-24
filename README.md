@@ -22,6 +22,7 @@ Restart Windows only if a driver installer requests it.
 | [Connection Trace Studio](https://github.com/titanfyre/Connection-Trace-Studio) | Observe IPv4/IPv6 connection lifecycle stages, process/endpoint metadata and bounded local diagnostics without packet capture or traffic modification. **Engineering preview; signing and runtime validation pending.** | Separate private WFP kernel sensor |
 | [Process Trace Studio](https://github.com/titanfyre/Process-Trace-Studio) | Observe process creation/exit and optional image loads with process-start identities and a bounded native SDK. **Engineering preview; signing and runtime validation pending.** | Separate private kernel notification sensor |
 | [File Trace Studio](https://github.com/titanfyre/File-Trace-Studio) | Inspect one selected process's file-operation counts, completion results and observed pre/post intervals without file paths or contents. **Offline preview; altitude allocation, signing and runtime validation pending.** | Separate private filesystem minifilter |
+| [Titan Audio Link](https://github.com/titanfyre/Titan-Audio-Link) | Pair virtual playback/recording endpoints, stream PCM through a small C++ SDK and compare deterministic stereo audio fixtures. **Engineering preview; Microsoft signing and further Windows validation pending.** | Separate private PortCls/WaveRT audio driver |
 
 The applications are native **C++17 for Windows 10/11 x64**. Their application
 source is **MIT licensed**. User-mode SDK notices are included in each project.
@@ -51,6 +52,12 @@ also requires a genuine Microsoft minifilter altitude allocation before an
 installable package can be generated. These previews have no enforced demo
 timer, online activation or integrated payment system. They are not antivirus,
 EDR, traffic-control or durable audit products.
+
+Titan Audio Link provides an audio routing/QA application and SDK preview. Its
+private audio driver incorporates Microsoft sample components under MS-PL,
+with retained notices. An installable signed driver is not yet included in its
+public ZIP. Paid integration, branding and audio QA/support are separately
+scoped engagements; no online activation or timed trial is implemented.
 
 For an unrestricted production-driver bundle, OEM deployment, integration or
 support, add **`titancsa`** as a friend on **Discord** and mention the project,
