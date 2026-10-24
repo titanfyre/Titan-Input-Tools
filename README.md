@@ -1,10 +1,11 @@
 # Titan Input Tools
 
-**Focused Windows input applications for testing, repair, automation and accessibility.**
+**Windows tools for input, device testing, OEM integration and support.**
 
 Browse the [project catalog](https://licences.configcsa.com/portfolio/catalog).
-Download a complete release ZIP from the project you need, install its matching
-driver, and restart Windows only if setup requests it.
+Choose the project and check its readiness below. Ready releases include their
+own installation instructions; source previews clearly identify pending work.
+Restart Windows only if a driver installer requests it.
 
 | Project | What it does | Driver |
 | --- | --- | --- |
@@ -14,20 +15,30 @@ driver, and restart Windows only if setup requests it.
 | [Controller Repair Bench](https://github.com/titanfyre/Controller-Repair-Bench) | Inspect controller axes, observed neutral drift/noise, button fields and report intervals; export repair reports. | Interceptor Gamepad & Controller |
 | [Assistive Pointer](https://github.com/titanfyre/Assistive-Pointer) | Adjust one mouse's gain, axis restriction, optional small-motion aggregation and repeated-click filtering. | Interceptor Keyboard & Mouse |
 | [Input CI Runner](https://github.com/titanfyre/Input-CI-Runner) | Validate HID fixture JSON offline or explicitly run scheduled reports and export enqueue observations. | Vdevice |
+| [Driver Readiness Inspector](https://github.com/titanfyre/Driver-Readiness-Inspector) | Read-only Windows device, service and signing evidence; export local HTML/JSON support reports. **Ready utility.** | No additional driver |
+| [Virtual Display Studio](https://github.com/titanfyre/Virtual-Display-Studio) | Explicitly owned 1080p60 virtual monitor control SDK. **Configurator/source preview; signing and GPU runtime tests pending.** | Separate private UMDF/IddCx package |
+| [Virtual COM Workbench](https://github.com/titanfyre/Virtual-COM-Workbench) | USB CDC serial cable and loopback prototype. **Engineering source preview; live COM startup remains unresolved.** | Vdevice |
+| Serial Device Simulator (publication pending) | Modbus RTU and limited SCPI protocol simulator. **Engineering source preview; live COM transport is not validated.** | Vdevice |
 
 The applications are native **C++17 for Windows 10/11 x64**. Their application
 source is **MIT licensed**. User-mode SDK notices are included in each project.
-The matching kernel drivers are **closed source** and supplied under separate
+The matching drivers are **closed source** and supplied under separate
 binary terms. Microsoft signing applies to the driver packages; it does not
 certify these applications or guarantee universal hardware/game compatibility.
 
 ## Evaluate or deploy commercially
 
-The public releases include the matching signed **one-hour demo driver** and
-installation instructions. The allowance is shared by applications using that
+The six original input tools include a matching signed **one-hour demo driver**
+and installation instructions in their releases. The allowance is shared by applications using that
 driver edition. A genuine Windows **Restart** starts another evaluation period;
 reinstalling or closing an app does not reset it. The application source itself
 has no additional application-layer paywall.
+
+Driver Readiness Inspector needs no additional driver, license activation or
+timer. Virtual Display Studio currently provides a configurator preview without
+an installable driver. The two serial projects publish source and offline tests;
+usable serial binaries are withheld until a real COM roundtrip passes. Their
+offline protocol checks do not establish working Windows transport.
 
 For an unrestricted production-driver bundle, OEM deployment, integration or
 support, add **`titancsa`** as a friend on **Discord** and mention the project,
