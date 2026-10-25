@@ -12,8 +12,8 @@ Microsoft endorsement or universal compatibility.
 | --- | --- | --- |
 | [User-Backed Virtual Disk SDK](https://github.com/titanfyre/User-Backed-Virtual-Disk-SDK) | Serve an explicitly owned virtual disk's bounded block requests from a native application backend. | App/SDK preview; Microsoft signing pending |
 | [USB Trace SDK](https://github.com/titanfyre/USB-Trace-SDK) | Collect bounded transfer records and payload excerpts at an explicitly selected USB device boundary. | App/SDK preview; Microsoft signing pending |
-| [Packet Capture SDK](https://github.com/titanfyre/Packet-Capture-SDK) | Capture and transmit bounded Ethernet frames through one explicitly selected adapter. | App/SDK preview; Microsoft signing pending |
-| [Network Emulation SDK](https://github.com/titanfyre/Network-Emulation-SDK) | Exercise selected application UDP IPv4 traffic with bounded loss and delay. | App/SDK preview; Microsoft signing pending |
+| [Packet Capture SDK](https://github.com/titanfyre/Packet-Capture-SDK) | Capture and transmit bounded Ethernet frames through one explicitly selected adapter. | Microsoft-signed 0.1.1 bundle; UI/console installers |
+| [Network Emulation SDK](https://github.com/titanfyre/Network-Emulation-SDK) | Exercise selected application UDP IPv4 traffic with bounded loss and delay. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [Virtual Network Adapter SDK](https://github.com/titanfyre/Virtual-Network-Adapter-SDK) | Exchange Ethernet frames between a native application and an independent virtual network adapter. | Microsoft-signed evaluation bundle |
 | [Virtual Camera SDK](https://github.com/titanfyre/Virtual-Camera-SDK) | Supply raw BGR24 frames to an AVStream camera capture interface. | Microsoft-signed evaluation bundle |
 | [HID Fixture Studio](https://github.com/titanfyre/HID-Fixture-Studio) | Build full-speed virtual HID fixtures from raw report descriptors. | Signed Vdevice demo bundle |
