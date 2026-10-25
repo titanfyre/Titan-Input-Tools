@@ -24,8 +24,8 @@ Microsoft endorsement or universal compatibility.
 | [ProcessGuard SDK](https://github.com/titanfyre/ProcessGuard-SDK) | Scope process-launch audit/deny rules to the SDK-owning application. | Microsoft-signed evaluation bundle |
 | [Connection Trace Studio](https://github.com/titanfyre/Connection-Trace-Studio) | Observe WFP connection lifecycle metadata without packet content. | Microsoft-signed evaluation bundle |
 | [Process Trace Studio](https://github.com/titanfyre/Process-Trace-Studio) | Receive bounded process/image lifecycle notifications. | Microsoft-signed evaluation bundle |
-| [Storage I/O Flight Recorder](https://github.com/titanfyre/Storage-IO-Flight-Recorder) | Record disk read/write completion timing and status on the synthetic lab disk. | App/SDK preview; signature pending |
-| [Virtual Storage Fault Lab](https://github.com/titanfyre/Virtual-Storage-Fault-Lab) | Exercise storage software against deterministic errors on a RAM-only lab disk. | App/SDK preview; signature pending |
+| [Storage I/O Flight Recorder](https://github.com/titanfyre/Storage-IO-Flight-Recorder) | Record disk read/write completion timing and status on the synthetic lab disk. | Microsoft-signed evaluation bundle |
+| [Virtual Storage Fault Lab](https://github.com/titanfyre/Virtual-Storage-Fault-Lab) | Exercise storage software against deterministic errors on a RAM-only lab disk. | Microsoft-signed evaluation bundle |
 | [Driver Readiness Inspector](https://github.com/titanfyre/Driver-Readiness-Inspector) | Export read-only PnP, service and signing evidence for support. | Ready utility; no added driver |
 | [Titan File Filter](https://github.com/titanfyre/Titan-File-Filter) | Prototype scoped file access policies and audit events. | Preview; Microsoft altitude and live qualification pending |
 | [File Trace Studio](https://github.com/titanfyre/File-Trace-Studio) | Inspect selected-process file-operation results and callback intervals. | Preview; Microsoft altitude and live qualification pending |
