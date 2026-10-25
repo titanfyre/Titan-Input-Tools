@@ -10,8 +10,8 @@ Microsoft endorsement or universal compatibility.
 
 | Project | API or workflow | Availability |
 | --- | --- | --- |
-| [Virtual Network Adapter SDK](https://github.com/titanfyre/Virtual-Network-Adapter-SDK) | Exchange Ethernet frames between a native application and an independent virtual network adapter. | App/SDK preview; Microsoft signature pending |
-| [Virtual Camera SDK](https://github.com/titanfyre/Virtual-Camera-SDK) | Supply raw BGR24 frames to an AVStream camera capture interface. | App/SDK preview; Microsoft signature pending |
+| [Virtual Network Adapter SDK](https://github.com/titanfyre/Virtual-Network-Adapter-SDK) | Exchange Ethernet frames between a native application and an independent virtual network adapter. | Microsoft-signed evaluation bundle |
+| [Virtual Camera SDK](https://github.com/titanfyre/Virtual-Camera-SDK) | Supply raw BGR24 frames to an AVStream camera capture interface. | Microsoft-signed evaluation bundle |
 | [HID Fixture Studio](https://github.com/titanfyre/HID-Fixture-Studio) | Build full-speed virtual HID fixtures from raw report descriptors. | Signed Vdevice demo bundle |
 | [Scanner Route](https://github.com/titanfyre/Scanner-Route) | Route one selected keyboard scanner to a scan view or CSV. | Signed input demo bundle |
 | [Input Replay Lab](https://github.com/titanfyre/Input-Replay-Lab) | Record and replay one selected keyboard or mouse for authorized QA. | Signed input demo bundle |
@@ -51,7 +51,7 @@ and signed per-session permissions. These permissions last at most one hour
 after acceptance and can be renewed while the key is enabled. Disabling a key
 refuses new grants; already-issued permissions remain usable until expiry,
 including their short challenge window. Keys are not bound to one machine.
-Their installable packages remain pending until Microsoft signing returns.
+Both installable signed bundles include self-contained UI and console setup executables.
 
 ## OEM integration and support
 
