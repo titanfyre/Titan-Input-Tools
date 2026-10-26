@@ -10,8 +10,8 @@ Microsoft endorsement or universal compatibility.
 
 | Project | API or workflow | Availability |
 | --- | --- | --- |
-| [User-Backed Virtual Disk SDK](https://github.com/titanfyre/User-Backed-Virtual-Disk-SDK) | Serve an explicitly owned virtual disk's bounded block requests from a native application backend. | App/SDK preview; Microsoft signing pending |
-| [USB Trace SDK](https://github.com/titanfyre/USB-Trace-SDK) | Collect bounded transfer records and payload excerpts at an explicitly selected USB device boundary. | App/SDK preview; Microsoft signing pending |
+| [User-Backed Virtual Disk SDK](https://github.com/titanfyre/User-Backed-Virtual-Disk-SDK) | Serve an explicitly owned virtual disk's bounded block requests from a native application backend. | Microsoft-signed 0.1.1 bundle; UI/console installers |
+| [USB Trace SDK](https://github.com/titanfyre/USB-Trace-SDK) | Collect bounded transfer records and payload excerpts at an explicitly selected USB device boundary. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [Packet Capture SDK](https://github.com/titanfyre/Packet-Capture-SDK) | Capture and transmit bounded Ethernet frames through one explicitly selected adapter. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [Network Emulation SDK](https://github.com/titanfyre/Network-Emulation-SDK) | Exercise selected application UDP IPv4 traffic with bounded loss and delay. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [Virtual Network Adapter SDK](https://github.com/titanfyre/Virtual-Network-Adapter-SDK) | Exchange Ethernet frames between a native application and an independent virtual network adapter. | Microsoft-signed evaluation bundle |
@@ -56,11 +56,10 @@ keys and signed per-session permissions. These permissions last at most one hour
 after acceptance and can be renewed while the key is enabled. Disabling a key
 refuses new grants; already-issued permissions remain usable until expiry,
 including their short challenge window. Keys are not bound to one machine.
-The signed Virtual Network Adapter and Virtual Camera bundles include self-contained
-UI and console setup executables. The Packet Capture, Network Emulation,
-User-Backed Virtual Disk and USB Trace
-previews contain app/SDK sources and examples; their unsigned drivers and setup
-binaries stay private until signing and returned-package qualification.
+The signed Virtual Network Adapter, Virtual Camera, Packet Capture, Network
+Emulation, User-Backed Virtual Disk and USB Trace bundles include self-contained
+UI and console setup executables. Each README describes its tested Windows
+configuration and remaining compatibility limits.
 
 ## OEM integration and support
 
