@@ -10,6 +10,10 @@ Microsoft endorsement or universal compatibility.
 
 | Project | API or workflow | Availability |
 | --- | --- | --- |
+| [Cloud Files SDK](https://github.com/titanfyre/Cloud-Files-SDK) | Hydrate read-only placeholders from an explicitly selected local or application backend through Windows Cloud Files. | Engineering preview; shared runtime signing pending |
+| [Remote Workstation SDK](https://github.com/titanfyre/Remote-Workstation-SDK) | Pair a visible desktop host and viewer over pinned TLS with optional explicit control. | Engineering preview; shared runtime signing pending |
+| [USB-over-IP SDK](https://github.com/titanfyre/USB-over-IP-SDK) | Forward bounded control, bulk and interrupt transfers from a selected vendor WinUSB interface to a virtual USB controller. | Engineering preview; runtime/controller signing pending |
+| [Changed Block Tracking SDK](https://github.com/titanfyre/Changed-Block-Tracking-SDK) | Obtain immutable changed-block bitmaps on the explicitly owned synthetic test disk. | Engineering preview; runtime/filter signing pending |
 | [User-Backed Virtual Disk SDK](https://github.com/titanfyre/User-Backed-Virtual-Disk-SDK) | Serve an explicitly owned virtual disk's bounded block requests from a native application backend. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [USB Trace SDK](https://github.com/titanfyre/USB-Trace-SDK) | Collect bounded transfer records and payload excerpts at an explicitly selected USB device boundary. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [Packet Capture SDK](https://github.com/titanfyre/Packet-Capture-SDK) | Capture and transmit bounded Ethernet frames through one explicitly selected adapter. | Microsoft-signed 0.1.1 bundle; UI/console installers |
@@ -62,6 +66,15 @@ UI and console setup executables. Each README describes its tested Windows
 configuration and remaining compatibility limits.
 
 ## OEM integration and support
+
+Cloud Files, Remote Workstation, USB-over-IP and Changed Block Tracking use a
+separate per-product one-hour demo that starts with the first real operation in
+each Windows boot. A commercial key passed to `Verification(key)` enables that
+product until Windows restarts, without replacing its demo driver. Revocation
+refuses future activations; it does not terminate an already authorized boot.
+These keys do not enforce machine counts. Cloud Files and Remote Workstation use
+public Windows APIs: their kernel gate governs the supplied implementation and
+cannot prevent independent implementations or modifications to public source.
 
 Add **`titancsa` on Discord** and name the project, Windows versions, intended
 workflow and deployment scope. Evaluation access, a scoped integration pilot,
