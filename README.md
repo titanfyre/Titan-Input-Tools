@@ -10,10 +10,10 @@ Microsoft endorsement or universal compatibility.
 
 | Project | API or workflow | Availability |
 | --- | --- | --- |
-| [Cloud Files SDK](https://github.com/titanfyre/Cloud-Files-SDK) | Hydrate read-only placeholders from an explicitly selected local or application backend through Windows Cloud Files. | Engineering preview; shared runtime signing pending |
-| [Remote Workstation SDK](https://github.com/titanfyre/Remote-Workstation-SDK) | Pair a visible desktop host and viewer over pinned TLS with optional explicit control. | Engineering preview; shared runtime signing pending |
-| [USB-over-IP SDK](https://github.com/titanfyre/USB-over-IP-SDK) | Forward bounded control, bulk and interrupt transfers from a selected vendor WinUSB interface to a virtual USB controller. | Engineering preview; runtime/controller signing pending |
-| [Changed Block Tracking SDK](https://github.com/titanfyre/Changed-Block-Tracking-SDK) | Obtain immutable changed-block bitmaps on the explicitly owned synthetic test disk. | Engineering preview; runtime/filter signing pending |
+| [Cloud Files SDK](https://github.com/titanfyre/Cloud-Files-SDK) | Hydrate read-only placeholders from an explicitly selected local or application backend through Windows Cloud Files. | Microsoft-signed evaluation; complete UI/console installers |
+| [Remote Workstation SDK](https://github.com/titanfyre/Remote-Workstation-SDK) | Pair a visible desktop host and viewer over pinned TLS with optional explicit control. | Microsoft-signed evaluation; complete UI/console installers |
+| [USB-over-IP SDK](https://github.com/titanfyre/USB-over-IP-SDK) | Forward bounded control, bulk and interrupt transfers from a selected vendor WinUSB interface to a virtual USB controller. | Microsoft-signed evaluation; complete UI/console installers |
+| [Changed Block Tracking SDK](https://github.com/titanfyre/Changed-Block-Tracking-SDK) | Obtain immutable changed-block bitmaps on the explicitly owned synthetic test disk. | Microsoft-signed evaluation; complete UI/console installers |
 | [User-Backed Virtual Disk SDK](https://github.com/titanfyre/User-Backed-Virtual-Disk-SDK) | Serve an explicitly owned virtual disk's bounded block requests from a native application backend. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [USB Trace SDK](https://github.com/titanfyre/USB-Trace-SDK) | Collect bounded transfer records and payload excerpts at an explicitly selected USB device boundary. | Microsoft-signed 0.1.1 bundle; UI/console installers |
 | [Packet Capture SDK](https://github.com/titanfyre/Packet-Capture-SDK) | Capture and transmit bounded Ethernet frames through one explicitly selected adapter. | Microsoft-signed 0.1.1 bundle; UI/console installers |
