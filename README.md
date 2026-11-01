@@ -2,6 +2,15 @@
 
 **Native Windows tools and C++ SDKs for virtual devices, input control, networking, media and system diagnostics.**
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full versions and commercial licensing**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Name the product you want and ask about its **full version without demo restrictions**, pricing and license / activation instructions.
+<!-- full-version-contact:end -->
+
 Browse the [product catalog](https://licences.configcsa.com/portfolio/catalog),
 then open a project's README for its supported scope, installation instructions
 and validation. Public application/SDK source is available; driver source stays
