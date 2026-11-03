@@ -19,6 +19,12 @@ Microsoft endorsement or universal compatibility.
 
 | Project | API or workflow | Availability |
 | --- | --- | --- |
+| [Interceptor](https://github.com/TitanCSA/Interceptor) | Capture/remap supported physical keyboard, mouse and controller input through the original C++17 API. | Signed one-hour-per-kernel-boot driver demo |
+| [Interceptor Keyboard & Mouse](https://github.com/TitanCSA/Interceptor-Keyboard-Mouse) | Select and remap supported physical keyboard/mouse sources. | Signed one-hour-per-kernel-boot driver demo |
+| [Interceptor Gamepad & Controller](https://github.com/TitanCSA/Interceptor-Gamepad-Controller) | Capture/remap compatible physical controller input; protocol and transport support varies. | Signed one-hour-per-kernel-boot driver demo |
+| [Vdevice](https://github.com/TitanCSA/Vdevice) | Create virtual USB devices from descriptors/reports, with keyboard, mouse and gamepad examples. | Signed one-hour-per-kernel-boot driver demo |
+| [Browser Control SDK](https://github.com/TitanCSA/Browser-Control-SDK) | Control an owned persistent WebView2 browser from Python, JavaScript, C++ or local stdio MCP. | Complete MIT utility; no input driver or demo timer |
+| [HID Access Control](https://github.com/titanfyre/HID-Access-Control) | Apply per-device rules to new user-mode opens of compatible controller collections; existing handles keep their access. | Signed demo bundle; see device/transport validation limits |
 | [Cloud Files SDK](https://github.com/titanfyre/Cloud-Files-SDK) | Hydrate read-only placeholders from an explicitly selected local or application backend through Windows Cloud Files. | Microsoft-signed evaluation; complete UI/console installers |
 | [Remote Workstation SDK](https://github.com/titanfyre/Remote-Workstation-SDK) | Pair a visible desktop host and viewer over pinned TLS with optional explicit control. | Microsoft-signed evaluation; complete UI/console installers |
 | [USB-over-IP SDK](https://github.com/titanfyre/USB-over-IP-SDK) | Forward bounded control, bulk and interrupt transfers from a selected vendor WinUSB interface to a virtual USB controller. | Microsoft-signed evaluation; complete UI/console installers |
@@ -129,3 +135,19 @@ and controller-only editions can coexist as documented by their installers.
 plain explanations and the action taken or still being considered. Questions
 and external device issues in this list are not necessarily bugs in these repos.
 An unimplemented suggestion is not a release commitment.
+
+## Other API editions
+
+These repositories expose related input/device APIs. Choose the matching driver,
+SDK and examples from one edition; consult its README for its own validation and
+licensing. The links below do not imply that different editions are interchangeable.
+
+| Repository | Documentation |
+| --- | --- |
+| Windows-Gamepad-Bridge | [README](https://github.com/StrikeFound/Windows-Gamepad-Bridge) |
+| Windows-Gamepad-Filter | [README](https://github.com/titanfyre/Windows-Gamepad-Filter) |
+| Windows-Input-Filter | [README](https://github.com/titanfyre/Windows-Input-Filter) |
+| Windows-Keyboard-Mouse-Bridge | [README](https://github.com/StrikeFound/Windows-Keyboard-Mouse-Bridge) |
+| Windows-Keyboard-Mouse-Filter | [README](https://github.com/titanfyre/Windows-Keyboard-Mouse-Filter) |
+| Windows-Virtual-Devices | [README](https://github.com/titanfyre/Windows-Virtual-Devices) |
+| Windows-Virtual-USB | [README](https://github.com/StrikeFound/Windows-Virtual-USB) |
