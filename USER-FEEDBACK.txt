@@ -239,3 +239,14 @@ Retour : Une personne apprécie le disque de test jetable. Elle demande si l'out
 
 Changement appliqué : Guide ajouté pour comparer compteurs et résultat du programme de test sans les confondre. Une trace reliant chaque tentative au résultat final n'est pas implémentée : elle demande une conception et des tests distincts.
 Exemple : Le programme constate une lecture reussie et le compteur augmente. Cela ne prouve pas que cette lecture a ete reessayee ; une trace par tentative reste a concevoir.
+
+------------------------------------------------------------------------
+
+Repo : Interceptor-Keyboard-Mouse / Vdevice (besoin externe : openzclick)
+Message :
+https://www.reddit.com/r/IndoorCycling/comments/1xmb771/i_started_building_an_open_source_driver_for/
+
+Retour : Un développeur veut transformer les boutons Bluetooth de son vélo en touches pour une application Windows. Il cherche de l'aide pour son propre programme Dart. Ce n'est pas un bug de tes pilotes et le besoin initial peut utiliser SendInput sans nouveau pilote.
+
+Changement appliqué : Le guide de sécurité explique maintenant quand une API Windows existante suffit et quand la capture d'un périphérique physique justifie ce SDK. Aucun port Dart ni test du bouton Bluetooth ajouté.
+Exemple : Envoyer i puis son relâchement pour changer de vitesse peut commencer avec SendInput. Bloquer seulement les touches d'un second clavier est un autre besoin, qui demande une sélection du périphérique dans son chemin d'entrée.
