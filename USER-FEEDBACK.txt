@@ -262,3 +262,14 @@ Ajout à envisager : Un petit guide expliquant le lien entre descripteur, rappor
 Exemple : Commencer avec un seul bouton virtuel, montrer le rapport qui le presse puis le relâche, et ensuite ajouter un axe.
 
 ------------------------------------------------------------------------
+
+Repo : Browser-Control-SDK (retour à confirmer sur l'outil utilisé)
+Message :
+https://www.reddit.com/r/mcp/comments/1xmqbrw/comment/19s2y7znbamlg/
+
+Retour : Une personne raconte qu'avec une automatisation de navigateur par MCP, l'identifiant renvoyé à l'ouverture ne correspondait parfois pas à l'onglet où la page avait chargé. Elle retrouvait l'onglet par son URL. Elle ne précise pas encore s'il s'agissait de ton SDK.
+
+Changement à vérifier : Demander l'outil utilisé et une courte suite d'appels reproductible, puis ajouter ce cas au test d'identité des onglets si cela concerne ton SDK. Ne pas choisir automatiquement un onglet seulement d'après son URL : deux onglets peuvent afficher la même page.
+Exemple : Ouvrir deux onglets avec la même URL publique, conserver leurs identifiants et vérifier que l'action vise bien celui qui a été demandé, même après une navigation.
+
+------------------------------------------------------------------------
