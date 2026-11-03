@@ -223,11 +223,12 @@ Exemple : Toucher un bouton sur l'écran distant doit envoyer ce toucher au PC. 
 Repo : Interceptor-Gamepad-Controller (besoin externe : Gulikit TT Max)
 Message :
 https://www.reddit.com/r/Controllers/comments/1xlluv5/gulikit_tt_max_issue_with_l_and_r_buttons/
+https://www.reddit.com/r/Controllers/comments/1xlluv5/comment/19s2ql1yrcts4/
 
-Retour : Une personne signale que les boutons L/R deviennent -/+ uniquement avec le dongle. Elle n'a pas signalé une erreur de ton pilote.
+Retour : Les boutons L/R devenaient -/+ avec le dongle. La personne confirme que la mise à jour du firmware du dongle 2,4 GHz a résolu le problème. Ce n'était pas un bug signalé dans ton pilote.
 
-Changement à vérifier : Comparer câble et dongle avec le test Windows. Aucun correctif de notre pilote justifié à ce stade.
-Exemple : Si L/R fonctionnent par câble mais donnent -/+ avec le dongle dans le test Windows, examiner ce mode de connexion avant d'ajouter un remappeur.
+Changement nécessaire : Aucun correctif du repo pour ce cas. Pour une demande similaire, conseiller de vérifier le firmware du dongle en plus de celui de la manette.
+Exemple : Si L/R fonctionnent par câble mais donnent -/+ avec le dongle, vérifier les mises à jour du récepteur avant d'ajouter un remappeur.
 
 ------------------------------------------------------------------------
 
