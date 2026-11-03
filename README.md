@@ -108,3 +108,24 @@ systems you own or administer with permission and comply with applicable law.
 No unlawful or unauthorized use is endorsed. Software is supplied without
 warranty; mandatory statutory rights and non-excludable liability remain
 unaffected.
+
+## Which physical-input edition?
+
+| Existing or intended API | Matching project |
+| --- | --- |
+| `Get_Input_With_Timeout()` / `Send_Input()` for keyboard, mouse and compatible controllers | [Interceptor](https://github.com/TitanCSA/Interceptor) |
+| The same API family for keyboard and mouse only | [Interceptor Keyboard & Mouse](https://github.com/TitanCSA/Interceptor-Keyboard-Mouse) |
+| Controller-only capture/remapping | [Interceptor Gamepad & Controller](https://github.com/TitanCSA/Interceptor-Gamepad-Controller) |
+| `Read()` / `Write()` with a move-only batch | [Windows Input Bridge](https://github.com/StrikeFound/Windows-Input-Bridge) |
+
+Use matching SDK/driver/examples; these editions are not interchangeable just
+by changing headers. Compare their validation scope and follow uninstall/restart
+instructions before replacing overlapping filters. The separate keyboard/mouse
+and controller-only editions can coexist as documented by their installers.
+
+## Community feedback follow-up
+
+[Feedback and changes (French)](USER-FEEDBACK.txt) keeps public source links,
+plain explanations and the action taken or still being considered. Questions
+and external device issues in this list are not necessarily bugs in these repos.
+An unimplemented suggestion is not a release commitment.
