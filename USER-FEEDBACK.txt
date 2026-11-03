@@ -251,3 +251,14 @@ Retour : Un développeur veut transformer les boutons Bluetooth de son vélo en 
 
 Changement appliqué : Le guide de sécurité explique maintenant quand une API Windows existante suffit et quand la capture d'un périphérique physique justifie ce SDK. Aucun port Dart ni test du bouton Bluetooth ajouté.
 Exemple : Envoyer i puis son relâchement pour changer de vitesse peut commencer avec SendInput. Bloquer seulement les touches d'un second clavier est un autre besoin, qui demande une sélection du périphérique dans son chemin d'entrée.
+
+Repo : Vdevice (besoin externe : apprendre le fonctionnement d'un contrôleur virtuel)
+Message :
+https://www.reddit.com/r/programmieren/comments/1vbl7w9/wie_entwickelt_man_einen_controlleremulator_auf/
+
+Retour : Une personne veut comprendre comment créer un contrôleur virtuel sous Windows et cherche des ressources pour apprendre. Elle précise ne pas vouloir une solution complète. Elle n'a pas commandé de pilote et n'a pas signalé de bug dans Vdevice.
+
+Ajout à envisager : Un petit guide expliquant le lien entre descripteur, rapport envoyé et bouton vu par Windows, avec des liens vers les exemples publics Microsoft. Les exemples C++ de Vdevice sont publics ; son code noyau reste privé.
+Exemple : Commencer avec un seul bouton virtuel, montrer le rapport qui le presse puis le relâche, et ensuite ajouter un axe.
+
+------------------------------------------------------------------------
