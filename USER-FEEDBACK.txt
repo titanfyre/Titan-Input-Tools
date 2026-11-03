@@ -1,211 +1,34 @@
-Repo : Browser-Control-SDK
-Message :
-https://www.reddit.com/r/sideprojects/comments/1xmb301/comment/19s1rorwvy5wl/
-
-Retour : Une personne apprécie de rester connectée entre deux utilisations du navigateur. Elle veut éviter de refaire la connexion à chaque lancement du script.
-
-Changement appliqué : Guide ajouté pour réutiliser le même profil et sa session. Il précise qu'un site peut expirer la connexion.
-Exemple : Se connecter une première fois, fermer le navigateur, le rouvrir et reprendre le script avec la session conservée.
-
-------------------------------------------------------------------------
-
-Repo : Browser-Control-SDK
-Message :
-https://www.reddit.com/r/sideprojects/comments/1xmb301/comment/19s1ssq7vwvad/
-
-Retour : Une personne veut savoir ce que fait le script lorsqu'un site demande une vérification humaine. Elle demande aussi un exemple équivalent en Python, JavaScript et C++.
-
-Changement appliqué : Exemples Python, JavaScript et C++ ajoutés et exécutés sur une page locale. Ils attendent une confirmation, relisent le même onglet et s'arrêtent en cas d'annulation ou de fermeture. La détection automatique des vérifications n'est pas ajoutée.
-Exemple : Le programme affiche la page, attend continue, puis relit la page. La suite du travail reste une decision explicite du programme appelant.------------------------------------------------------------------------
-
-Repo : Browser-Control-SDK
-Message :
-https://www.reddit.com/r/sideprojects/comments/1xmb301/comment/19s1tvue2h2ld/
-
-Retour : Une personne veut vérifier qu'un script continue de viser le bon onglet quand l'utilisateur en affiche un autre. Elle demande aussi ce qui se passe si l'onglet visé est fermé.
-
-Changement appliqué : Exemple local ajouté et exécuté. A reçoit son clic, B reste inchangé et affiché ; une action sur A fermé renvoie tab_not_found.
-Exemple : Le script vise A, tu affiches B : le clic doit rester sur A. Si A est fermé, afficher une erreur au lieu de cliquer dans B.
-
-------------------------------------------------------------------------
-
-Repo : Browser-Control-SDK
-Message :
-https://www.reddit.com/r/sideprojects/comments/1xmb301/comment/19s2b2yhfjqsl/
-
-Retour : Une personne ne sait pas si un client MCP peut utiliser deux profils enregistrés en même temps, ou s'il faut une connexion séparée pour chacun.
-
-Changement appliqué : Guide MCP ajouté avec profils dans une instance et configurations distinctes pour deux instances. Les chemins de connexion doivent rester privés.
-Exemple : Deux onglets Travail et Personnel dans le même navigateur peuvent partager une connexion MCP. Deux instances séparées demandent deux configurations MCP visant chacune la bonne instance.
-
-------------------------------------------------------------------------
-
-Repo : Driver-Readiness-Inspector
-Message :
-https://www.reddit.com/r/coolgithubprojects/comments/1xmb3u5/comment/19s1tknnnbrut/
-
-Retour : Une personne trouve qu'une valeur vide dans le rapport peut être ambiguë : information absente, accès refusé ou contrôle non applicable ? Les détails existent déjà dans le format actuel.
-
-Changement appliqué : Documentation complétée avec un exemple accès refusé / valeur inconnue. Le format existant est conservé ; aucune nouvelle interface de rapport ajoutée.
-Exemple : Afficher « Accès refusé : information non lue » au lieu de laisser une case vide qui pourrait être comprise comme « aucun problème ».
-
-------------------------------------------------------------------------
-
-Repo : Driver-Readiness-Inspector
-Message :
-https://www.reddit.com/r/coolgithubprojects/comments/1xmb3u5/comment/19s1tknnnbrut/
-
-Retour : Une personne craint qu'une signature valide soit comprise comme une garantie de sécurité du pilote.
-
-Changement appliqué : Explication ajoutée sur la confiance locale et les limites d'une signature. Aucun nouveau contrôle de sécurité ou de certification ajouté.
-Exemple : Afficher « Signature vérifiée sur ce PC » puis « Cela ne garantit pas que le pilote est sûr ou compatible ».
-
-------------------------------------------------------------------------
-
-Repo : Driver-Readiness-Inspector
-Message :
-https://www.reddit.com/r/coolgithubprojects/comments/1xmb3u5/comment/19s1tknnnbrut/
-
-Retour : Une personne demande à qui le rapport est destiné : au propriétaire du PC ou au technicien qui l'aide.
-
-Changement appliqué : Parcours utilisateur puis technicien ajouté au README. La gratuité complète de l'utilitaire MIT et le support commercial facultatif sont clarifiés.
-Exemple : L'utilisateur crée un rapport, vérifie les informations qu'il contient, puis le transmet au support technique.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor / Windows-Input-Bridge
-Message :
-https://www.reddit.com/r/IMadeThis/comments/1xmei9z/comment/19s1y5yh1a2f5/
-
-Retour : Une personne ne comprend pas bien pourquoi les deux repos existent ni lequel choisir. Les deux couvrent clavier, souris et manettes compatibles.
-
-Changement appliqué : Comparaison ajoutée aux deux README et à l'annuaire. Les API et les pilotes doivent appartenir à la même édition ; vérifier la validation et les vrais périphériques avant de changer.
-Exemple : « Ton application utilise déjà Get_Input_With_Timeout()/Send_Input() : garde Interceptor et son pilote correspondant. Pour essayer Read()/Write(), utilise l'ensemble Windows Input Bridge. »
-
-------------------------------------------------------------------------
-
-Repo : Interceptor / Interceptor-Keyboard-Mouse / Interceptor-Gamepad-Controller / Vdevice / Windows-Input-Bridge
-Message :
-https://www.reddit.com/r/IMadeThis/comments/1xmei9z/comment/19s1y5yh1a2f5/
-
-Retour : Une personne demande si ces outils sont surtout utilisés pour créer des remappeurs ou pour tester des périphériques. Il n'y a pas encore assez de données pour répondre.
-
-Changement à envisager : Recueillir les cas d'utilisation. Aucun changement de code justifié par ce message seul.
-Exemple : Demander aux personnes intéressées : « Tu veux modifier les touches d'un appareil ou automatiser un test ? »
-
-------------------------------------------------------------------------
-
 Repo : Vdevice
 Message :
 https://www.reddit.com/r/coolgithubprojects/comments/1xmc4i8/comment/19s1wi3563dlu/
 
-Retour : Une personne demande si elle peut fabriquer un clavier Arduino avec Vdevice. Elle ne distingue pas le programme de la carte du pilote installé sur le PC.
+Retour : Une personne voulait utiliser une carte Arduino comme clavier. L'explication carte/PC est faite. Une liaison entre les messages de la carte et Vdevice reste une extension possible, pas un bug confirmé.
 
-Changement appliqué : Guide Vdevice ajouté distinguant carte Arduino et pilote Windows. Le programme de liaison carte-PC reste un ajout possible, non fourni et non testé.
-Exemple : Un bouton Arduino envoie un message au PC ; un programme Windows le transforme en touche avec Vdevice. Ce programme de liaison n'est pas fourni actuellement.
-
-------------------------------------------------------------------------
-
-Repo : Vdevice
-Message :
-https://www.reddit.com/r/coolgithubprojects/comments/1xmc4i8/comment/19s1wox62td41/
-
-Retour : Une personne ne comprend toujours pas à quoi sert un clavier virtuel après la première explication.
-
-Changement appliqué : Deux usages concrets ajoutés au README : répéter un test d'entrée et expérimenter avec les descripteurs USB/HID.
-Exemple : Tester une application en lui envoyant toujours la même suite de touches, ou essayer une disposition de clavier sans fabriquer le matériel.
+Ajout possible : Un petit programme Windows qui lit les messages de la carte et les transforme en rapports Vdevice. Il faudrait gérer les déconnexions et relâcher les touches. Aucune carte précise n'est encore validée.
+Exemple : Le bouton de la carte envoie A au PC ; le programme envoie une pression puis un relâchement. Si la liaison tombe, aucune touche ne doit rester enfoncée.
 
 ------------------------------------------------------------------------
 
 Repo : Interceptor-Keyboard-Mouse
 Message :
 https://www.reddit.com/r/macro_pads/comments/1xmbg0d/comment/19s23equ0ds01/
-
-Retour : Une personne demande pourquoi un pilote noyau est nécessaire et quels risques son installation présente.
-
-Changement appliqué : Modèle de sécurité documenté : accès administrateur, données sensibles et sélection d'un appareil sans garantie d'isolation. Les tests de contrôle d'accès et l'audit indépendant restent à réaliser avant toute nouvelle promesse.
-Exemple : Expliquer que « modifier seulement ce clavier » est une règle de l'exemple, pas une protection contre toute application malveillante. Prévoir un test des accès autorisés et refusés.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Keyboard-Mouse
-Message :
-https://www.reddit.com/r/lowlevel/comments/1xjj2m0/comment/19rw48gq5x9b7/
-https://www.reddit.com/r/macro_pads/comments/1xmbg0d/comment/19s23equ0ds01/
-
-Retour : Plusieurs personnes demandent comment le pilote a été signé par Microsoft et si Microsoft l'a lui-même développé.
-
-Changement appliqué : Soumission via Partner Center expliquée. Aucun audit, développement par Microsoft ou certification HLK/WHQL non confirmés ne sont annoncés.
-Exemple : « Le pilote est développé par nous et soumis via Partner Center. La signature Microsoft ne signifie pas que Microsoft a écrit ou audité le code. »
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Keyboard-Mouse
-Message :
 https://www.reddit.com/r/lowlevel/comments/1xjj2m0/comment/19rx2rf20u7ok/
-https://www.reddit.com/r/macro_pads/comments/1xmbg0d/comment/19s23equ0ds01/
 
-Retour : Des personnes craignent que l'accès aux touches et aux mouvements serve à les surveiller. Le noyau privé rend cette confiance plus difficile à établir. Aucun comportement malveillant n'a été démontré dans ces messages.
+Retour : Des personnes demandent quelles applications peuvent capturer les touches et comment évaluer les risques du pilote privé. La documentation et l'explication de la signature sont faites ; les tests de sécurité approfondis restent à réaliser.
 
-Changement appliqué : Capacités de capture et limites de confiance expliquées. La documentation recommande de vérifier les fichiers et transmissions de l'application utilisée ; elle ne prétend pas avoir audité chaque application.
-Exemple : Publier une liste simple : données lues, éventuels fichiers enregistrés, éventuelles transmissions et accès administrateur nécessaires.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Keyboard-Mouse
-Message :
-https://www.reddit.com/r/ReverseEngineering/comments/1xjj7eg/comment/19rw03vl6hj1f/
-https://www.reddit.com/r/ReverseEngineering/comments/1xjj7eg/comment/19rw7pgei6tgk/
-
-Retour : Une personne juge le code présenté difficile à lire, peu indenté et trop compliqué. Elle ne donne pas de fichier ni de ligne précise.
-
-Changement à préciser : Aucun fichier ni ligne identifié. Ne pas réécrire le pilote sans exemple concret du problème.
-Exemple : Séparer la sélection du périphérique, la lecture des événements et leur renvoi en fonctions faciles à repérer, avec des noms explicites.
+Ajout à envisager : Des tests montrant quels accès au pilote sont autorisés ou refusés, et les limites entre applications de capture. Un audit indépendant serait un travail distinct ; il n'est pas annoncé comme réalisé.
+Exemple : Une application non autorisée tente d'ouvrir le pilote. Vérifier le résultat et documenter précisément les droits nécessaires.
 
 ------------------------------------------------------------------------
 
 Repo : Interceptor-Keyboard-Mouse
-Message :
-https://www.reddit.com/r/ReverseEngineering/comments/1xjj7eg/comment/19rxfk7t1gi3l/
-https://www.reddit.com/r/cpp/comments/1xjj6p1/comment/19rx7tg07vueb/
-
-Retour : Des personnes jugent la présentation hors sujet dans certaines communautés. Des modérateurs demandent d'utiliser le fil prévu pour les projets personnels.
-
-Changement appliqué dans la démarche : Respecter les règles et les fils dédiés ; ne pas republier dans les discussions supprimées ou les communautés qui interdisent ces publications.
-Exemple : Présenter un exemple concret dans un espace qui accepte les projets personnels, plutôt que republier le même texte dans un fil où il a été retiré.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Keyboard-Mouse
-Message :
-https://www.reddit.com/user/ArunRock13/comments/1v8tjtw/ahk_identify_2_keyboard_but_not_blocking_original/
-
-Retour : Une personne identifie deux claviers dans son script AHK, mais les touches du second arrivent encore dans les autres applications. C'est un problème de son script, pas un bug confirmé de ton SDK.
-
-Changement appliqué : Guide de sélection d'un clavier et de renvoi des autres événements ajouté. Un wrapper AHK n'est pas fourni.
-Exemple : Le second clavier déclenche une macro, mais sa touche ne doit pas aussi écrire un caractère dans le document ouvert.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Keyboard-Mouse (besoin externe : MKESPN K809)
 Message :
 https://www.reddit.com/r/keyboards/comments/1vmn100/is_there_a_program_i_can_use_to_remap_only_one/
 
-Retour : Une personne veut remapper uniquement son K809 sans changer son clavier principal. Le logiciel du fabricant ne détecte pas correctement l'appareil. Aucun test avec ton SDK n'a confirmé sa compatibilité.
+Retour : Une personne veut remapper son MKESPN K809 sans changer son clavier principal. Le guide général est fait, mais la compatibilité de cet appareil avec ton SDK n'est pas confirmée.
 
-Changement appliqué : Guide général de sélection d'un clavier ajouté. La compatibilité K809 et le problème du logiciel fabricant restent non vérifiés.
-Exemple : Transformer la touche 1 du K809 en F13, tout en gardant la touche 1 du clavier principal inchangée.
-
-------------------------------------------------------------------------
-
-Repo : Vdevice (besoin externe : autre pilote de clavier virtuel)
-Message :
-https://www.reddit.com/r/windowsdev/comments/1t4vaue/is_it_possible_to_generate_keyboard_input_from_a/
-
-Retour : Une personne développe son propre pilote. Windows détecte son clavier virtuel, mais aucune touche n'apparaît dans les applications. Aucun défaut de Vdevice n'est identifié ici.
-
-Changement appliqué : Liste de diagnostic ajoutée : descripteur, rapport, état prêt, pression puis relâchement et résultat dans l'application. Cela ne corrige pas l'autre pilote UMDF.
-Exemple : Montrer l'envoi d'une touche A puis son relâchement, et vérifier si un éditeur de texte reçoit bien A : détecter le périphérique ne suffit pas.
+Changement à vérifier : Identifier l'appareil et sa connexion, puis tester sa sélection, ses pressions et ses relâchements. Ajouter une note de compatibilité seulement après un test réel.
+Exemple : La touche 1 du K809 devient F13, tandis que la touche 1 du clavier principal reste inchangée.
 
 ------------------------------------------------------------------------
 
@@ -213,22 +36,10 @@ Repo : USB-over-IP-SDK
 Message :
 https://www.reddit.com/r/MiniPCs/comments/1xmaxzs/is_this_even_possible_wireless_touchscreen_mouse/
 
-Retour : Une personne veut utiliser sans fil la partie tactile d'un écran normalement relié en USB. Ses adaptateurs clavier/souris ne fonctionnent pas avec cet écran. La compatibilité avec ton SDK n'est pas démontrée.
+Retour : Une personne veut utiliser sans fil le tactile d'un écran normalement relié en USB. Ses adaptateurs clavier/souris ne fonctionnent pas avec cet écran. La compatibilité de ton SDK n'est pas démontrée.
 
-Changement à vérifier : Identifier l'écran et son interface avant de promettre le tactile distant. Aucune nouvelle prise en charge USB ajoutée.
-Exemple : Toucher un bouton sur l'écran distant doit envoyer ce toucher au PC. Il faut tester ce cas précis, pas seulement vérifier qu'une souris classique fonctionne.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Gamepad-Controller (besoin externe : Gulikit TT Max)
-Message :
-https://www.reddit.com/r/Controllers/comments/1xlluv5/gulikit_tt_max_issue_with_l_and_r_buttons/
-https://www.reddit.com/r/Controllers/comments/1xlluv5/comment/19s2ql1yrcts4/
-
-Retour : Les boutons L/R devenaient -/+ avec le dongle. La personne confirme que la mise à jour du firmware du dongle 2,4 GHz a résolu le problème. Ce n'était pas un bug signalé dans ton pilote.
-
-Changement nécessaire : Aucun correctif du repo pour ce cas. Pour une demande similaire, conseiller de vérifier le firmware du dongle en plus de celui de la manette.
-Exemple : Si L/R fonctionnent par câble mais donnent -/+ avec le dongle, vérifier les mises à jour du récepteur avant d'ajouter un remappeur.
+Changement à vérifier : Obtenir le modèle de l'écran et son interface USB, puis tester les vrais événements tactiles avant de promettre ce cas d'usage.
+Exemple : Toucher un bouton sur l'écran distant doit transmettre ce toucher au PC ; un test de souris seul ne suffit pas.
 
 ------------------------------------------------------------------------
 
@@ -236,40 +47,18 @@ Repo : Virtual-Storage-Fault-Lab
 Message :
 https://www.reddit.com/r/coolgithubprojects/comments/1xmjb1s/comment/19s2ajn2eghcw/
 
-Retour : Une personne apprécie le disque de test jetable. Elle demande si l'outil distingue les lectures réessayées des erreurs finalement reçues par l'application. Les compteurs actuels ne donnent pas ce détail.
+Retour : Une personne voudrait distinguer les tentatives de lecture réessayées des erreurs finalement reçues par l'application. Le guide est fait, mais les compteurs actuels ne relient pas chaque tentative au résultat final.
 
-Changement appliqué : Guide ajouté pour comparer compteurs et résultat du programme de test sans les confondre. Une trace reliant chaque tentative au résultat final n'est pas implémentée : elle demande une conception et des tests distincts.
-Exemple : Le programme constate une lecture reussie et le compteur augmente. Cela ne prouve pas que cette lecture a ete reessayee ; une trace par tentative reste a concevoir.
-
-------------------------------------------------------------------------
-
-Repo : Interceptor-Keyboard-Mouse / Vdevice (besoin externe : openzclick)
-Message :
-https://www.reddit.com/r/IndoorCycling/comments/1xmb771/i_started_building_an_open_source_driver_for/
-
-Retour : Un développeur veut transformer les boutons Bluetooth de son vélo en touches pour une application Windows. Il cherche de l'aide pour son propre programme Dart. Ce n'est pas un bug de tes pilotes et le besoin initial peut utiliser SendInput sans nouveau pilote.
-
-Changement appliqué : Le guide de sécurité explique maintenant quand une API Windows existante suffit et quand la capture d'un périphérique physique justifie ce SDK. Aucun port Dart ni test du bouton Bluetooth ajouté.
-Exemple : Envoyer i puis son relâchement pour changer de vitesse peut commencer avec SendInput. Bloquer seulement les touches d'un second clavier est un autre besoin, qui demande une sélection du périphérique dans son chemin d'entrée.
-
-Repo : Vdevice (besoin externe : apprendre le fonctionnement d'un contrôleur virtuel)
-Message :
-https://www.reddit.com/r/programmieren/comments/1vbl7w9/wie_entwickelt_man_einen_controlleremulator_auf/
-
-Retour : Une personne veut comprendre comment créer un contrôleur virtuel sous Windows et cherche des ressources pour apprendre. Elle précise ne pas vouloir une solution complète. Elle n'a pas commandé de pilote et n'a pas signalé de bug dans Vdevice.
-
-Ajout à envisager : Un petit guide expliquant le lien entre descripteur, rapport envoyé et bouton vu par Windows, avec des liens vers les exemples publics Microsoft. Les exemples C++ de Vdevice sont publics ; son code noyau reste privé.
-Exemple : Commencer avec un seul bouton virtuel, montrer le rapport qui le presse puis le relâche, et ensuite ajouter un axe.
+Ajout à envisager : Une trace limitée permettant de rapprocher les commandes du pilote et les résultats du programme de test, sans confondre les compteurs globaux avec une preuve de réessai. Cela demande une conception et des tests distincts.
+Exemple : Une lecture réussit après un incident injecté ; pouvoir retrouver les tentatives correspondantes au lieu de le deviner d'après un compteur.
 
 ------------------------------------------------------------------------
 
-Repo : Browser-Control-SDK (retour à confirmer sur l'outil utilisé)
+Repo : Browser-Control-SDK
 Message :
 https://www.reddit.com/r/mcp/comments/1xmqbrw/comment/19s2y7znbamlg/
 
-Retour : Une personne raconte qu'avec une automatisation de navigateur par MCP, l'identifiant renvoyé à l'ouverture ne correspondait parfois pas à l'onglet où la page avait chargé. Elle retrouvait l'onglet par son URL. Elle ne précise pas encore s'il s'agissait de ton SDK.
+Retour : Une personne indique qu'un navigateur piloté par MCP renvoyait parfois un identifiant différent de l'onglet où la page avait chargé. Elle n'a pas encore précisé si elle utilisait ton SDK ; un exemple reproductible a été demandé.
 
-Changement à vérifier : Demander l'outil utilisé et une courte suite d'appels reproductible, puis ajouter ce cas au test d'identité des onglets si cela concerne ton SDK. Ne pas choisir automatiquement un onglet seulement d'après son URL : deux onglets peuvent afficher la même page.
-Exemple : Ouvrir deux onglets avec la même URL publique, conserver leurs identifiants et vérifier que l'action vise bien celui qui a été demandé, même après une navigation.
-
-------------------------------------------------------------------------
+Changement à vérifier : Confirmer l'outil utilisé, puis reproduire la suite d'appels et ajouter un test si le problème concerne ton SDK. Ne pas remplacer automatiquement l'identifiant par une recherche d'URL, car plusieurs onglets peuvent avoir la même URL.
+Exemple : Ouvrir deux onglets avec la même page publique et vérifier que l'action reste sur l'identifiant demandé après navigation.
