@@ -13,8 +13,10 @@
 
 Browse the [product catalog](https://licences.configcsa.com/portfolio/catalog),
 then open a project's README for its supported scope, installation instructions
-and validation. Public application/SDK source is available; driver source stays
-private. Windows x64 is the target. Signing does not imply WHQL certification,
+and validation. Many projects publish application/SDK source; Latency Inspector
+publishes downloads and documentation while keeping its application source private.
+Check each project's own license, including retained upstream terms. Driver source
+stays private. Windows x64 is the target. Signing does not imply WHQL certification,
 Microsoft endorsement or universal compatibility.
 
 | Project | API or workflow | Availability |
@@ -55,6 +57,26 @@ Microsoft endorsement or universal compatibility.
 | [RegistryGuard](https://github.com/titanfyre/RegistryGuard) | Prototype scoped application registry write audit/deny rules. | Preview; Microsoft altitude and live qualification pending |
 | [Virtual COM Workbench](https://github.com/titanfyre/Virtual-COM-Workbench) | Prototype a virtual USB CDC serial cable and loopback. | Source preview; live COM transport not validated |
 | [Serial Device Simulator](https://github.com/titanfyre/Serial-Device-Simulator) | Test serial software with Modbus RTU and limited SCPI scenarios. | Source preview; live COM transport not validated |
+
+## Language bindings and application examples
+
+Choose a wrapper for the **matching driver edition**. These applications do not
+make different driver APIs interchangeable, and their driver allowances are
+shared with other applications using the same edition.
+
+| Project | Use it for | Source and driver terms |
+| --- | --- | --- |
+| [AutoHotInterceptor](https://github.com/TitanCSA/AutoHotInterceptor) | AutoHotkey v1/v2 per-device keyboard/mouse subscriptions, with a portable launcher and input monitor; adapted from evilC/AutoHotInterception. | MIT wrapper changes and retained upstream notices; bundled stock AutoHotkey is GPL-2.0. Matching Keyboard & Mouse driver: private, one-hour-per-kernel-boot demo. |
+| [node-interceptor](https://github.com/TitanCSA/node-interceptor) | Node.js 20+/TypeScript keyboard/mouse wait, receive and send bindings, adapted from Rami-Sabbagh/node-interception. Install the release TGZ from GitHub. | LGPL-3.0-or-later wrapper; MIT SDK/bridge notices. Matching Keyboard & Mouse driver: private, one-hour-per-kernel-boot demo. |
+| [Interceptor MultiLang](https://github.com/TitanCSA/Interceptor-MultiLang) | Mixed physical input batches through Python, Node.js/TypeScript, .NET, Java, Go, Rust or a C ABI. | MIT user-mode source. Requires the matching combined Interceptor driver, not the split editions; one-hour-per-kernel-boot demo. |
+| [Interception V2](https://github.com/TitanCSA/Interception-V2) | Use the original `interception_*` C SDK with a separate HID keyboard/mouse compatibility driver; validate existing applications individually. PS/2 is outside its documented scope. | Original SDK/sample licenses remain applicable; separately developed private V2 driver has its own one-hour demo terms. |
+| [GamePad Remapper](https://github.com/TitanCSA/GamePad-Remapper) | Study a complete native controller remapper with IGC scripts, macros, script settings and live IN/OUT observation. | MIT application; private Gamepad & Controller driver, one-hour-per-kernel-boot demo, including live monitoring. |
+| [Keyboard & Mouse Remapper](https://github.com/TitanCSA/Keyboard-Mouse-Remapper) | Build keyboard/mouse remaps and timed macros with editable IGC scripts and visual rules. | MIT application; private Keyboard & Mouse driver, one-hour-per-kernel-boot demo, including live monitoring. |
+| [Curve Controller](https://github.com/TitanCSA/Curve-Controller) | Edit radial or separate-X/Y joystick response curves with presets, ten-point custom curves and JSON import/export. | MIT application; private Gamepad & Controller driver, one-hour-per-kernel-boot demo. Physical-controller support needs qualification. |
+| [Cronus Interceptor](https://github.com/TitanCSA/Cronus-Interceptor) | Edit and run a documented subset of GPC source scripts in an independent native studio. Compatibility preview; not the official Cronus compiler or hardware. | MIT application; private Gamepad & Controller driver, one-hour-per-kernel-boot demo. Check unsupported language and hardware features. |
+| [Virtual Mouse Input](https://github.com/TitanCSA/Virtual-mouse-input) | Learn virtual USB mouse descriptors, relative reports, clicks and wheels from a small complete C++ application. Relative counts are not guaranteed pixels. | MIT application/SDK; private Vdevice driver, one-hour-per-kernel-boot demo. |
+| [Remote Device Control](https://github.com/TitanCSA/Remote-Device-Control) | Direct Windows remote desktop using Sunshine/Moonlight H.264 transport and Vdevice keyboard/mouse input. Requires an unlocked console desktop; no relay, audio, clipboard or gamepad forwarding. | GPL-3.0 combined application with retained dependency notices; separate private Vdevice driver, one-hour-per-kernel-boot demo on the host. |
+| [Latency Inspector](https://github.com/TitanCSA/Latency-Inspector) | Inspect defined Raw Input, PresentMon and Windows tracing intervals, with an optional passive kernel probe. Software intervals are not physical input-to-photon measurements. | Proprietary application/installer/probe source. Public downloads and documentation; ask about production, commercial and OEM terms. |
 
 ## Try a product
 
@@ -151,3 +173,15 @@ licensing. The links below do not imply that different editions are interchangea
 | Windows-Keyboard-Mouse-Filter | [README](https://github.com/titanfyre/Windows-Keyboard-Mouse-Filter) |
 | Windows-Virtual-Devices | [README](https://github.com/titanfyre/Windows-Virtual-Devices) |
 | Windows-Virtual-USB | [README](https://github.com/StrikeFound/Windows-Virtual-USB) |
+
+## Catalog and community contribution
+
+[Titan Input Tools](https://github.com/titanfyre/Titan-Input-Tools) is this catalog
+and its public community-feedback follow-up. Together with the product tables
+and API-edition links above, it references every public original project in the
+TitanCSA and titanfyre accounts checked on 4 November 2026.
+
+[TitanCSA/awesome-mcp-servers](https://github.com/TitanCSA/awesome-mcp-servers)
+is a contribution fork of the community MCP server directory maintained upstream.
+The Browser Control SDK directory contribution remains a [draft pull request](https://github.com/punkpeye/awesome-mcp-servers/pull/18469)
+pending the relevant Windows setup qualification and maintainer review.
