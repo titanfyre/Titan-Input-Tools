@@ -178,10 +178,15 @@ licensing. The links below do not imply that different editions are interchangea
 
 [Titan Input Tools](https://github.com/titanfyre/Titan-Input-Tools) is this catalog
 and its public community-feedback follow-up. Together with the product tables
-and API-edition links above, it references every public original project in the
+and API-edition links above, it references every public non-fork repository in the
 TitanCSA and titanfyre accounts checked on 4 November 2026.
 
 [TitanCSA/awesome-mcp-servers](https://github.com/TitanCSA/awesome-mcp-servers)
 is a contribution fork of the community MCP server directory maintained upstream.
 The Browser Control SDK directory contribution remains a [draft pull request](https://github.com/punkpeye/awesome-mcp-servers/pull/18469)
 pending the relevant Windows setup qualification and maintainer review.
+
+[TitanCSA/awesome-windows-foss](https://github.com/TitanCSA/awesome-windows-foss)
+is a contribution fork of the Windows-specific free-software directory. The
+[Driver Readiness Inspector proposal](https://github.com/fithisux/awesome-windows-foss/pull/12)
+is open for maintainer review; this is a directory contribution, not another product.
