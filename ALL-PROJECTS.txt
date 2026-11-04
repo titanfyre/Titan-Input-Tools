@@ -1,0 +1,314 @@
+TITAN WINDOWS PROJECTS — COMPLETE PUBLIC REPOSITORY INDEX
+
+Verified against GitHub on 4 November 2026.
+Accounts: TitanCSA (18 public repositories), titanfyre (36), StrikeFound (4).
+Total: 58 public repositories, including 56 project/catalog repositories and 2 contribution forks.
+
+Choose a project by its supported use case, matching SDK/driver edition and license.
+Several repositories expose related APIs; they are not interchangeable packages.
+Free utilities, signed evaluations and engineering previews have different availability.
+Demo source availability does not make every kernel source MIT or OSI open source.
+For evaluation, full-version licensing or OEM integration, follow the relevant README contact instructions.
+Contribution forks remain attributed to their upstream projects; no upstream endorsement is implied.
+
+================================================================
+TitanCSA
+================================================================
+
+TitanCSA/AutoHotInterceptor
+https://github.com/TitanCSA/AutoHotInterceptor
+Project / catalog — see README for supported scope and availability.
+AutoHotkey v1/v2 per-device keyboard and mouse automation using the Microsoft-signed Interceptor Keyboard & Mouse Windows kernel filter driver.
+
+TitanCSA/awesome-mcp-servers
+https://github.com/TitanCSA/awesome-mcp-servers
+Contribution fork — see upstream attribution in the catalog.
+A collection of MCP servers.
+
+TitanCSA/awesome-windows-foss
+https://github.com/TitanCSA/awesome-windows-foss
+Contribution fork — see upstream attribution in the catalog.
+List of windows specific Free Open Source software
+
+TitanCSA/Browser-Control-SDK
+https://github.com/TitanCSA/Browser-Control-SDK
+Project / catalog — see README for supported scope and availability.
+Windows Chromium browser SDK with Python, JavaScript, C++, MCP, compact AI action plans, persistent profiles and Windows-protected saved logins.
+
+TitanCSA/Cronus-Interceptor
+https://github.com/TitanCSA/Cronus-Interceptor
+Project / catalog — see README for supported scope and availability.
+Independent native C++ GPC controller script studio for Windows, using the Interceptor Gamepad & Controller kernel filter driver. Editor, script library, IN/OUT monitor and explicit compatibility diagnostics.
+
+TitanCSA/Curve-Controller
+https://github.com/TitanCSA/Curve-Controller
+Project / catalog — see README for supported scope and availability.
+Real-time joystick response curve editor for Windows. Native C++ application using the Interceptor Gamepad & Controller SDK: HID, XInput and GIP.
+
+TitanCSA/GamePad-Remapper
+https://github.com/TitanCSA/GamePad-Remapper
+Project / catalog — see README for supported scope and availability.
+Complete C++ example application for the Interceptor Gamepad & Controller kernel filter driver: controller remapping, IGC scripts and macros, script-defined settings and live IN/OUT monitoring.
+
+TitanCSA/Interception-V2
+https://github.com/TitanCSA/Interception-V2
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows keyboard and mouse kernel driver with the original Interception C SDK, legacy application compatibility, and a one-hour demo.
+
+TitanCSA/Interceptor
+https://github.com/TitanCSA/Interceptor
+Project / catalog — see README for supported scope and availability.
+Windows Kernel Filter Driver for keyboard, mouse and USB gamepad input interception/remapping. DS4/DualShock 4 (PS4), DualSense (PS5), wired Xbox 360 and Xbox One/Series X|S via compatible HID/XInput/GIP profiles. Microsoft-signed demo, C++17 SDK, GUI/CLI installers.
+
+TitanCSA/Interceptor-Gamepad-Controller
+https://github.com/TitanCSA/Interceptor-Gamepad-Controller
+Project / catalog — see README for supported scope and availability.
+Windows Kernel Filter Driver for gamepad/controller input interception and remapping. HID, XInput/XUSB, XInputHID and GIP; DS4/PS4, DualSense/PS5, wired Xbox 360 and Xbox One/Series profiles. Microsoft-signed one-hour-per-kernel-boot demo, C++17 SDK, GUI/CLI installers.
+
+TitanCSA/Interceptor-Keyboard-Mouse
+https://github.com/TitanCSA/Interceptor-Keyboard-Mouse
+Project / catalog — see README for supported scope and availability.
+Windows Kernel Filter Driver for keyboard and mouse input interception, remapping and blocking. Microsoft-signed Windows 10/11 x64 demo, simple C++17 SDK, GUI/CLI installers and console/UI examples.
+
+TitanCSA/Interceptor-MultiLang
+https://github.com/TitanCSA/Interceptor-MultiLang
+Project / catalog — see README for supported scope and availability.
+Simple multi-language SDK for the Interceptor Windows kernel input filter driver: Python, JavaScript/TypeScript, C#, Java, Go, Rust and C/C++. Keyboard, mouse and gamepad.
+
+TitanCSA/Keyboard-Mouse-Remapper
+https://github.com/TitanCSA/Keyboard-Mouse-Remapper
+Project / catalog — see README for supported scope and availability.
+Native C++ keyboard and mouse remapper with IGC scripts, macros, visual editing and live IN/OUT, powered by the Interceptor Windows kernel filter driver.
+
+TitanCSA/Latency-Inspector
+https://github.com/TitanCSA/Latency-Inspector
+Project / catalog — see README for supported scope and availability.
+Windows gaming latency analyzer: per-device input timing, CPU/GPU frames, DPC/ISR, scheduling, network, storage and audio. Passive kernel probe support.
+
+TitanCSA/node-interceptor
+https://github.com/TitanCSA/node-interceptor
+Project / catalog — see README for supported scope and availability.
+Node.js / TypeScript keyboard and mouse interception, remapping and injection with the Microsoft-signed Interceptor Keyboard & Mouse Windows kernel filter driver.
+
+TitanCSA/Remote-Device-Control
+https://github.com/TitanCSA/Remote-Device-Control
+Project / catalog — see README for supported scope and availability.
+Native Windows remote desktop with Sunshine/Moonlight H.264 streaming and Vdevice virtual USB keyboard/mouse. Portable viewer, direct LAN/Internet and optional local approval.
+
+TitanCSA/Vdevice
+https://github.com/TitanCSA/Vdevice
+Project / catalog — see README for supported scope and availability.
+Windows kernel driver for virtual USB keyboard, mouse and gamepad devices. Raw C++ SDK; Xbox 360/XInput, DS4 and Xbox One/GIP examples. Microsoft-signed one-hour-per-kernel-boot demo.
+
+TitanCSA/Virtual-mouse-input
+https://github.com/TitanCSA/Virtual-mouse-input
+Project / catalog — see README for supported scope and availability.
+C++ virtual USB HID mouse example using the Microsoft-signed Vdevice kernel driver: buttons, relative X/Y movement and scrolling. Windows 10/11 x64.
+
+================================================================
+titanfyre
+================================================================
+
+titanfyre/Assistive-Pointer
+https://github.com/titanfyre/Assistive-Pointer
+Project / catalog — see README for supported scope and availability.
+Windows per-mouse accessibility adjustments with an input kernel filter driver: gain, axis restriction, optional motion aggregation and click debounce.
+
+titanfyre/Changed-Block-Tracking-SDK
+https://github.com/titanfyre/Changed-Block-Tracking-SDK
+Project / catalog — see README for supported scope and availability.
+Windows KMDF kernel disk filter and C++ SDK for conservative changed-block maps and immutable checkpoints. Explicit synthetic-disk evaluation, demo and product-key full access.
+
+titanfyre/Cloud-Files-SDK
+https://github.com/titanfyre/Cloud-Files-SDK
+Project / catalog — see README for supported scope and availability.
+Native Windows Cloud Files C++ SDK for on-demand file hydration and application-defined read-only storage backends. One-hour demo; product-key full access and OEM integration.
+
+titanfyre/Connection-Trace-Studio
+https://github.com/titanfyre/Connection-Trace-Studio
+Project / catalog — see README for supported scope and availability.
+Windows kernel WFP connection diagnostics and native C++ SDK: IPv4/IPv6 TCP/UDP metadata, process/port correlation and Microsoft-signed evaluation installers.
+
+titanfyre/Controller-Repair-Bench
+https://github.com/titanfyre/Controller-Repair-Bench
+Project / catalog — see README for supported scope and availability.
+Windows C++ controller inspection for repair and QA: HID, XInput/XUSB and GIP state, observed stick drift, report cadence and HTML/CSV reports.
+
+titanfyre/Driver-Readiness-Inspector
+https://github.com/titanfyre/Driver-Readiness-Inspector
+Project / catalog — see README for supported scope and availability.
+Read-only Windows driver diagnostics for OEM support: PnP problem codes, configured filters, driver service state, cached embedded signature evidence and local HTML/JSON reports.
+
+titanfyre/File-Trace-Studio
+https://github.com/titanfyre/File-Trace-Studio
+Project / catalog — see README for supported scope and availability.
+Windows file I/O minifilter diagnostics SDK for OEM integration. C++ GUI/CLI and selected-process completion intervals; preview awaiting allocated altitude and Microsoft signing.
+
+titanfyre/HID-Access-Control
+https://github.com/titanfyre/HID-Access-Control
+Project / catalog — see README for supported scope and availability.
+Windows HID access-control kernel filter driver with per-device app allow/deny rules, C++ SDK and native UI. Microsoft-signed Windows 10/11 x64 one-hour demo.
+
+titanfyre/HID-Fixture-Studio
+https://github.com/titanfyre/HID-Fixture-Studio
+Project / catalog — see README for supported scope and availability.
+Native C++ Windows virtual USB HID fixture editor powered by Vdevice: raw report descriptors, editable VID/PID and explicit input report testing.
+
+titanfyre/Input-CI-Runner
+https://github.com/titanfyre/Input-CI-Runner
+Project / catalog — see README for supported scope and availability.
+Windows C++ command-line virtual HID test runner powered by Vdevice: bounded JSON fixtures, scheduled raw reports and JSON enqueue observations.
+
+titanfyre/Input-Replay-Lab
+https://github.com/titanfyre/Input-Replay-Lab
+Project / catalog — see README for supported scope and availability.
+Windows C++ keyboard and mouse capture/replay for authorized application QA, using an input kernel filter driver with local JSON/CSV timelines.
+
+titanfyre/Network-Emulation-SDK
+https://github.com/titanfyre/Network-Emulation-SDK
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed windows WFP kernel UDP IPv4 fault-simulation SDK for repeatable network QA and OEM integration. Scoped traffic, bounded native C++ API, product-key authorization and support.
+
+titanfyre/Packet-Capture-SDK
+https://github.com/titanfyre/Packet-Capture-SDK
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed windows NDIS kernel Ethernet capture and injection SDK for explicit-adapter diagnostics, protocol labs and OEM integration. Native C++ API, product-key authorization and support.
+
+titanfyre/Process-Trace-Studio
+https://github.com/titanfyre/Process-Trace-Studio
+Project / catalog — see README for supported scope and availability.
+Windows kernel process and image telemetry with a native C++ SDK, lifecycle correlation and self-contained Microsoft-signed evaluation installers. OEM diagnostics.
+
+titanfyre/ProcessGuard-SDK
+https://github.com/titanfyre/ProcessGuard-SDK
+Project / catalog — see README for supported scope and availability.
+Windows kernel process launch policy driver with a two-file C++ SDK. Audit/deny direct application-owned executable launches. Microsoft-signed evaluation installers.
+
+titanfyre/RegistryGuard
+https://github.com/titanfyre/RegistryGuard
+Project / catalog — see README for supported scope and availability.
+Windows kernel registry filter SDK and native C++ UI for scoped application-key write audit/control. Altitude/signing pending; OEM integration: Discord titancsa.
+
+titanfyre/Remote-Workstation-SDK
+https://github.com/titanfyre/Remote-Workstation-SDK
+Project / catalog — see README for supported scope and availability.
+Native C++ Windows desktop streaming SDK with explicit pairing, pinned TLS and optional keyboard/mouse control. LAN host/viewer, one-hour demo and product-key full access.
+
+titanfyre/Scanner-Route
+https://github.com/titanfyre/Scanner-Route
+Project / catalog — see README for supported scope and availability.
+Windows USB HID barcode scanner routing with a signed kernel filter driver demo: select one device, validate scan prefixes and export local CSV.
+
+titanfyre/Serial-Device-Simulator
+https://github.com/titanfyre/Serial-Device-Simulator
+Project / catalog — see README for supported scope and availability.
+Windows C++ Modbus RTU and SCPI protocol simulator source preview with a Vdevice USB CDC backend. Offline model tests pass; live COM startup is not validated.
+
+titanfyre/Storage-IO-Flight-Recorder
+https://github.com/titanfyre/Storage-IO-Flight-Recorder
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel disk filter and C++ SDK for bounded read/write completion timing on the synthetic lab disk. Complete installers, OEM diagnostics and support.
+
+titanfyre/Titan-Audio-Link
+https://github.com/titanfyre/Titan-Audio-Link
+Project / catalog — see README for supported scope and availability.
+Windows kernel virtual audio I/O driver and native C++ SDK. Paired playback/recording endpoints, WASAPI streaming and verified audio fixtures. Signed evaluation.
+
+titanfyre/Titan-File-Filter
+https://github.com/titanfyre/Titan-File-Filter
+Project / catalog — see README for supported scope and availability.
+Windows kernel filesystem minifilter and native C++ SDK for scoped file-access audit/control, rule attribution and NTFS/ReFS integration. Engineering preview; altitude/signing pending.
+
+titanfyre/Titan-Input-Tools
+https://github.com/titanfyre/Titan-Input-Tools
+Project / catalog — see README for supported scope and availability.
+Native Windows C++ driver SDKs for input, virtual devices, networking, storage, cloud files and remote workstations. Signed evaluation bundles, product keys and OEM integration.
+
+titanfyre/Titan-Network-Filter
+https://github.com/titanfyre/Titan-Network-Filter
+Project / catalog — see README for supported scope and availability.
+Windows kernel network filter driver and C++ SDK: IPv4/IPv6 connection control, process/port/CIDR rules, attributed decisions and IP accounting. Signed evaluation.
+
+titanfyre/USB-over-IP-SDK
+https://github.com/titanfyre/USB-over-IP-SDK
+Project / catalog — see README for supported scope and availability.
+Windows UdeCx kernel virtual USB controller and C++ WinUSB-over-network SDK with pinned TLS. Bounded vendor-specific USB 2 interfaces; demo and product-key full access.
+
+titanfyre/USB-Trace-SDK
+https://github.com/titanfyre/USB-Trace-SDK
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed windows USB filter driver SDK for explicitly selected device transfer diagnostics. Bounded metadata/payload records, native C++ API, signed handle authorization and OEM integration.
+
+titanfyre/User-Backed-Virtual-Disk-SDK
+https://github.com/titanfyre/User-Backed-Virtual-Disk-SDK
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed windows kernel virtual block device SDK with application-provided RAM/file storage backends. Native C++ API, bounded requests, signed handle authorization and OEM integration.
+
+titanfyre/Virtual-Camera-SDK
+https://github.com/titanfyre/Virtual-Camera-SDK
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows AVStream kernel virtual camera and C++ raw-frame SDK for generated video, camera QA and OEM integration. Complete installers and product-key authorization.
+
+titanfyre/Virtual-COM-Workbench
+https://github.com/titanfyre/Virtual-COM-Workbench
+Project / catalog — see README for supported scope and availability.
+Engineering source preview of a Windows C++ virtual USB CDC COM cable and loopback tool using Vdevice. Offline checks pass; live COM startup remains under investigation.
+
+titanfyre/Virtual-Display-Studio
+https://github.com/titanfyre/Virtual-Display-Studio
+Project / catalog — see README for supported scope and availability.
+Windows UMDF/IddCx virtual monitor driver, native C++ SDK and self-contained Microsoft-signed evaluation installers. Explicit 1080p60 display lifetime for OEM integration.
+
+titanfyre/Virtual-Network-Adapter-SDK
+https://github.com/titanfyre/Virtual-Network-Adapter-SDK
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows NDIS kernel virtual Ethernet adapter and C++ SDK for application-defined networking, protocol simulation and OEM integration. Complete installers and product-key authorization.
+
+titanfyre/Virtual-Storage-Fault-Lab
+https://github.com/titanfyre/Virtual-Storage-Fault-Lab
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows Storport kernel virtual disk and C++ SDK for deterministic errors on a RAM-only lab disk. Complete UI/console installers, OEM QA integration and support.
+
+titanfyre/Windows-Gamepad-Filter
+https://github.com/titanfyre/Windows-Gamepad-Filter
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel filter driver for HID, XInput/XUSB and GIP gamepads: Xbox, DualShock and DualSense input families. C++17 SDK, examples and one-hour demo.
+
+titanfyre/Windows-Input-Filter
+https://github.com/titanfyre/Windows-Input-Filter
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel filter driver for keyboard, mouse and HID/XInput/GIP gamepad input interception. C++17 SDK, UI/console tools and one-hour demo.
+
+titanfyre/Windows-Keyboard-Mouse-Filter
+https://github.com/titanfyre/Windows-Keyboard-Mouse-Filter
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel filter driver for physical keyboard and mouse interception, remapping and forwarding. Two-file C++17 SDK, installers and one-hour demo.
+
+titanfyre/Windows-Virtual-Devices
+https://github.com/titanfyre/Windows-Virtual-Devices
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel driver and raw C++17 SDK for configurable virtual USB/HID keyboard, mouse and gamepad devices. Graphical examples, installers and one-hour demo.
+
+================================================================
+StrikeFound
+================================================================
+
+StrikeFound/Windows-Gamepad-Bridge
+https://github.com/StrikeFound/Windows-Gamepad-Bridge
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel filter driver for HID, XInput/XUSB and GIP gamepads: Xbox, DualShock and DualSense input families. C++17 SDK, examples and one-hour demo.
+
+StrikeFound/Windows-Input-Bridge
+https://github.com/StrikeFound/Windows-Input-Bridge
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel filter driver for keyboard, mouse and HID/XInput/GIP gamepad input interception. C++17 SDK, UI/console tools and one-hour demo.
+
+StrikeFound/Windows-Keyboard-Mouse-Bridge
+https://github.com/StrikeFound/Windows-Keyboard-Mouse-Bridge
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel filter driver for physical keyboard and mouse interception, remapping and forwarding. Two-file C++17 SDK, installers and one-hour demo.
+
+StrikeFound/Windows-Virtual-USB
+https://github.com/StrikeFound/Windows-Virtual-USB
+Project / catalog — see README for supported scope and availability.
+Microsoft-signed Windows kernel driver and raw C++17 SDK for configurable virtual USB/HID keyboard, mouse and gamepad devices. Graphical examples, installers and one-hour demo.

@@ -176,9 +176,11 @@ licensing. The links below do not imply that different editions are interchangea
 ## Catalog and community contribution
 
 [Titan Input Tools](https://github.com/titanfyre/Titan-Input-Tools) is this catalog
-and its public community-feedback follow-up. Together with the product tables
-and API-edition links above, it references every public non-fork repository in the
-TitanCSA and titanfyre accounts checked on 4 November 2026.
+and its public community-feedback follow-up. The [complete public repository index](ALL-PROJECTS.txt)
+lists all **58 public repositories** in **TitanCSA, titanfyre and StrikeFound**,
+checked on 4 November 2026: 56 project/catalog repositories and two contribution
+forks. Related API editions have separate entries; the contribution forks below
+are attributed to their upstream maintainers and are not separate commercial products.
 
 [TitanCSA/awesome-mcp-servers](https://github.com/TitanCSA/awesome-mcp-servers)
 is a contribution fork of the community MCP server directory maintained upstream.
