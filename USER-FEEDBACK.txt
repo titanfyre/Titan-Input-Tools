@@ -62,3 +62,14 @@ Retour : Une personne indique qu'un navigateur piloté par MCP renvoyait parfois
 
 Changement à vérifier : Confirmer l'outil utilisé, puis reproduire la suite d'appels et ajouter un test si le problème concerne ton SDK. Ne pas remplacer automatiquement l'identifiant par une recherche d'URL, car plusieurs onglets peuvent avoir la même URL.
 Exemple : Ouvrir deux onglets avec la même page publique et vérifier que l'action reste sur l'identifiant demandé après navigation.
+
+------------------------------------------------------------------------
+
+Repo : Browser-Control-SDK
+Message :
+https://www.reddit.com/r/sideprojects/comments/1xmb301/comment/19s43g77zweow/
+
+Retour : Une personne propose d'ajouter le serveur MCP au catalogue de HOL Guard pour faciliter sa découverte. Le lancement actuel par un script Python ne correspond pas au format de lancement documenté pour ce catalogue. Une précision a été demandée au contributeur.
+
+Ajout à envisager : Distribuer une commande dédiée au serveur MCP, ou convenir avec le mainteneur d'un format adapté, puis proposer la fiche. C'est une amélioration de distribution, pas un bug du navigateur.
+Exemple : Pouvoir lancer browser-control-mcp --endpoint ... au lieu de python MCP/server.py. Cette commande dédiée serait à créer ; elle n'est pas fournie actuellement.
