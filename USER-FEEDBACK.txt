@@ -14,7 +14,7 @@ Message :
 https://www.reddit.com/r/macro_pads/comments/1xmbg0d/comment/19s23equ0ds01/
 https://www.reddit.com/r/lowlevel/comments/1xjj2m0/comment/19rx2rf20u7ok/
 
-Retour : Des personnes demandent quelles applications peuvent capturer les touches et comment évaluer les risques du pilote privé. La documentation et l'explication de la signature sont faites ; les tests de sécurité approfondis restent à réaliser.
+Retour : Des personnes demandent quelles applications peuvent capturer les touches et comment évaluer les risques du pilote. Les sources du pilote démo, sa documentation et les explications sur la signature sont maintenant publiques ; les tests de sécurité approfondis restent à réaliser.
 
 Ajout à envisager : Des tests montrant quels accès au pilote sont autorisés ou refusés, et les limites entre applications de capture. Un audit indépendant serait un travail distinct ; il n'est pas annoncé comme réalisé.
 Exemple : Une application non autorisée tente d'ouvrir le pilote. Vérifier le résultat et documenter précisément les droits nécessaires.
@@ -51,17 +51,6 @@ Retour : Une personne voudrait distinguer les tentatives de lecture réessayées
 
 Ajout à envisager : Une trace limitée permettant de rapprocher les commandes du pilote et les résultats du programme de test, sans confondre les compteurs globaux avec une preuve de réessai. Cela demande une conception et des tests distincts.
 Exemple : Une lecture réussit après un incident injecté ; pouvoir retrouver les tentatives correspondantes au lieu de le deviner d'après un compteur.
-
-------------------------------------------------------------------------
-
-Repo : Browser-Control-SDK
-Message :
-https://www.reddit.com/r/mcp/comments/1xmqbrw/comment/19s2y7znbamlg/
-
-Retour : Une personne indique qu'un navigateur piloté par MCP renvoyait parfois un identifiant différent de l'onglet où la page avait chargé. Elle n'a pas encore précisé si elle utilisait ton SDK ; un exemple reproductible a été demandé.
-
-Changement à vérifier : Confirmer l'outil utilisé, puis reproduire la suite d'appels et ajouter un test si le problème concerne ton SDK. Ne pas remplacer automatiquement l'identifiant par une recherche d'URL, car plusieurs onglets peuvent avoir la même URL.
-Exemple : Ouvrir deux onglets avec la même page publique et vérifier que l'action reste sur l'identifiant demandé après navigation.
 
 ------------------------------------------------------------------------
 
