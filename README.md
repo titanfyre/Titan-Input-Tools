@@ -2,6 +2,8 @@
 
 **Native Windows tools and C++ SDKs for virtual devices, input control, networking, media and system diagnostics.**
 
+Find a project and its setup instructions in the [English project guide](https://github.com/TitanCSA/TitanCSA/blob/main/PROJECTS.en.md) or [French project guide](https://github.com/TitanCSA/TitanCSA/blob/main/PROJECTS.md). The guides cover the 58 currently public projects, including applications and the centralized SDK package guides.
+
 <!-- full-version-contact:start -->
 > [!IMPORTANT]
 > **Full versions and commercial licensing**
@@ -143,7 +145,7 @@ unaffected.
 | `Get_Input_With_Timeout()` / `Send_Input()` for keyboard, mouse and compatible controllers | [Interceptor](https://github.com/TitanCSA/Interceptor) |
 | The same API family for keyboard and mouse only | [Interceptor Keyboard & Mouse](https://github.com/TitanCSA/Interceptor-Keyboard-Mouse) |
 | Controller-only capture/remapping | [Interceptor Gamepad & Controller](https://github.com/TitanCSA/Interceptor-Gamepad-Controller) |
-| `Read()` / `Write()` with a move-only batch | [Windows Input Bridge](https://github.com/StrikeFound/Windows-Input-Bridge) |
+| `Receive()` / `Submit()` with a move-only batch | [Windows Input Filter](https://github.com/titanfyre/Windows-Input-Filter) |
 
 Use matching SDK/driver/examples; these editions are not interchangeable just
 by changing headers. Compare their validation scope and follow uninstall/restart
@@ -165,22 +167,21 @@ licensing. The links below do not imply that different editions are interchangea
 
 | Repository | Documentation |
 | --- | --- |
-| Windows-Gamepad-Bridge | [README](https://github.com/StrikeFound/Windows-Gamepad-Bridge) |
 | Windows-Gamepad-Filter | [README](https://github.com/titanfyre/Windows-Gamepad-Filter) |
 | Windows-Input-Filter | [README](https://github.com/titanfyre/Windows-Input-Filter) |
-| Windows-Keyboard-Mouse-Bridge | [README](https://github.com/StrikeFound/Windows-Keyboard-Mouse-Bridge) |
 | Windows-Keyboard-Mouse-Filter | [README](https://github.com/titanfyre/Windows-Keyboard-Mouse-Filter) |
 | Windows-Virtual-Devices | [README](https://github.com/titanfyre/Windows-Virtual-Devices) |
-| Windows-Virtual-USB | [README](https://github.com/StrikeFound/Windows-Virtual-USB) |
+
+The four StrikeFound repositories — Windows-Gamepad-Bridge, Windows-Input-Bridge, Windows-Keyboard-Mouse-Bridge and Windows-Virtual-USB — were unavailable when checked on 15 November 2026. They remain recorded in the historical index; the current installation choices are the accessible projects linked above.
 
 ## Catalog and community contribution
 
 [Titan Input Tools](https://github.com/titanfyre/Titan-Input-Tools) is this catalog
-and its public community-feedback follow-up. The [complete public repository index](ALL-PROJECTS.txt)
-lists all **58 public repositories** in **TitanCSA, titanfyre and StrikeFound**,
-checked on 4 November 2026: 56 project/catalog repositories and two contribution
-forks. Related API editions have separate entries; the contribution forks below
-are attributed to their upstream maintainers and are not separate commercial products.
+and its public community-feedback follow-up. Use the current project guides linked
+above to choose a project. [ALL-PROJECTS.txt](ALL-PROJECTS.txt) preserves the
+4 November 2026 repository snapshot, including contribution forks and older
+entries. Contribution forks are attributed to their upstream maintainers and are
+not separate commercial products.
 
 [TitanCSA/awesome-mcp-servers](https://github.com/TitanCSA/awesome-mcp-servers)
 is a contribution fork of the community MCP server directory maintained upstream.
@@ -190,4 +191,4 @@ pending the relevant Windows setup qualification and maintainer review.
 [TitanCSA/awesome-windows-foss](https://github.com/TitanCSA/awesome-windows-foss)
 is a contribution fork of the Windows-specific free-software directory. The
 [Driver Readiness Inspector proposal](https://github.com/fithisux/awesome-windows-foss/pull/12)
-is open for maintainer review; this is a directory contribution, not another product.
+has been merged upstream; this is a directory contribution, not another product.
