@@ -2,8 +2,8 @@
 
 **Native Windows tools and C++ SDKs for virtual devices, input control, networking, media and system diagnostics.**
 
-Browse the [product catalog](https://licences.configcsa.com/portfolio/catalog),
-then open a project's README for its supported scope, installation instructions
+Browse the [project portal](https://titancsa.github.io/),
+with 60 curated project and SDK entries, then open a project's README for its supported scope, installation instructions
 and validation. Many projects publish application/SDK source; Latency Inspector
 publishes downloads and documentation while keeping its application source private.
 Check each project's own license, including retained upstream terms. Where published, demo/evaluation driver source and build notes are documented in each project's `driver/README.md`. Titan-authored driver code uses separate evaluation-source terms; retained third-party licenses continue to apply. Full/commercial implementations and private signing or activation material remain excluded. Windows x64 is the target. Signing does not imply WHQL certification,
@@ -134,7 +134,7 @@ unaffected.
 | `Get_Input_With_Timeout()` / `Send_Input()` for keyboard, mouse and compatible controllers | [Interceptor](https://github.com/TitanCSA/Interceptor) |
 | The same API family for keyboard and mouse only | [Interceptor Keyboard & Mouse](https://github.com/TitanCSA/Interceptor-Keyboard-Mouse) |
 | Controller-only capture/remapping | [Interceptor Gamepad & Controller](https://github.com/TitanCSA/Interceptor-Gamepad-Controller) |
-| `Read()` / `Write()` with a move-only batch | [Windows Input Bridge](https://github.com/StrikeFound/Windows-Input-Bridge) |
+| Historical `Read()` / `Write()` bridge API | Windows Input Bridge; no public download currently available |
 
 Use matching SDK/driver/examples; these editions are not interchangeable just
 by changing headers. Compare their validation scope and follow uninstall/restart
@@ -156,13 +156,13 @@ licensing. The links below do not imply that different editions are interchangea
 
 | Repository | Documentation |
 | --- | --- |
-| Windows-Gamepad-Bridge | [README](https://github.com/StrikeFound/Windows-Gamepad-Bridge) |
+| Windows-Gamepad-Bridge | Historical reference; public repository currently unavailable |
 | Windows-Gamepad-Filter | [README](https://github.com/titanfyre/Windows-Gamepad-Filter) |
 | Windows-Input-Filter | [README](https://github.com/titanfyre/Windows-Input-Filter) |
-| Windows-Keyboard-Mouse-Bridge | [README](https://github.com/StrikeFound/Windows-Keyboard-Mouse-Bridge) |
+| Windows-Keyboard-Mouse-Bridge | Historical reference; public repository currently unavailable |
 | Windows-Keyboard-Mouse-Filter | [README](https://github.com/titanfyre/Windows-Keyboard-Mouse-Filter) |
 | Windows-Virtual-Devices | [README](https://github.com/titanfyre/Windows-Virtual-Devices) |
-| Windows-Virtual-USB | [README](https://github.com/StrikeFound/Windows-Virtual-USB) |
+| Windows-Virtual-USB | Historical reference; public repository currently unavailable |
 
 ## Catalog and community contribution
 
@@ -193,3 +193,7 @@ is open for maintainer review; this is a directory contribution, not another pro
 >
 > Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Name the product you want and ask about its **full version without demo restrictions**, pricing and license / activation instructions.
 <!-- full-version-contact:end -->
+
+## Start with your workflow
+
+The [project portal](https://titancsa.github.io/) groups 60 public project and SDK entries by task. Use the [first-run guide](https://titancsa.github.io/guides/first-run/) for prerequisites, the [input selection guide](https://titancsa.github.io/guides/choose-input/) for matching editions, and the [evidence guide](https://titancsa.github.io/about/evidence/) for support and test limitations. SDK-only sources and engineering previews are labelled individually.
