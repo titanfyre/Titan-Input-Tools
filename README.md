@@ -2,15 +2,6 @@
 
 **Native Windows tools and C++ SDKs for virtual devices, input control, networking, media and system diagnostics.**
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full versions and commercial licensing**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Name the product you want and ask about its **full version without demo restrictions**, pricing and license / activation instructions.
-<!-- full-version-contact:end -->
-
 Browse the [product catalog](https://licences.configcsa.com/portfolio/catalog),
 then open a project's README for its supported scope, installation instructions
 and validation. Many projects publish application/SDK source; Latency Inspector
@@ -191,3 +182,14 @@ pending the relevant Windows setup qualification and maintainer review.
 is a contribution fork of the Windows-specific free-software directory. The
 [Driver Readiness Inspector proposal](https://github.com/fithisux/awesome-windows-foss/pull/12)
 is open for maintainer review; this is a directory contribution, not another product.
+
+## Commercial integration and support
+
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Full versions and commercial licensing**
+>
+> **Discord username: `titancsa`**
+>
+> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Name the product you want and ask about its **full version without demo restrictions**, pricing and license / activation instructions.
+<!-- full-version-contact:end -->
