@@ -3,7 +3,11 @@
 <!-- simple-start:start -->
 Find the Titan tool that fits what you want to do with input on Windows.
 
-**Start here.** Choose a tool and follow its own first steps.
+[First steps](#first-steps) · [Develop](https://github.com/titanfyre/Titan-Input-Tools/tree/main) · [Maintain](https://github.com/TitanCSA/sdk-packages/blob/main/CONTRIBUTING.md)
+
+## First steps
+
+Choose a tool and follow its own first steps.
 <!-- simple-start:end -->
 
 <!-- full-version-contact:start -->
