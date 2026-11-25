@@ -1,5 +1,15 @@
 # Titan Windows Drivers and SDKs
 
+<!-- full-version-contact:start -->
+> [!IMPORTANT]
+> **Get the version without the one-hour demo limit**
+>
+> **Discord · `titancsa`**. Open [Discord](https://discord.com/app), choose **Friends → Add Friend**, enter **`titancsa`** and send a message.
+> Send the project name and ask for its full version. TitanCSA will share the purchase details privately.
+>
+> **FR · Version sans la limite d’une heure.** Ajoute **`titancsa`** sur Discord et envoie le nom du projet. Le lien d’achat est communiqué en privé.
+<!-- full-version-contact:end -->
+
 **Native Windows tools and C++ SDKs for virtual devices, input control, networking, media and system diagnostics.**
 
 Browse the [project portal](https://titancsa.github.io/),
@@ -185,14 +195,6 @@ is open for maintainer review; this is a directory contribution, not another pro
 
 ## Commercial integration and support
 
-<!-- full-version-contact:start -->
-> [!IMPORTANT]
-> **Full versions and commercial licensing**
->
-> **Discord username: `titancsa`**
->
-> Open Discord, choose **Friends > Add Friend**, enter **`titancsa`**, then send a direct message. Name the product you want and ask about its **full version without demo restrictions**, pricing and license / activation instructions.
-<!-- full-version-contact:end -->
 
 ## Start with your workflow
 
